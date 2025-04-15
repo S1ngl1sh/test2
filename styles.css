@@ -188,7 +188,6 @@ p {
     box-shadow: 0 5px 15px rgba(193, 72, 0, 0.4);
 }
 
-/* Мобильное меню */
 .menu-toggle {
     display: none;
     flex-direction: column;
