@@ -1,0 +1,220 @@
+/* Стили для страницы задач */
+.tasks-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tasks-hero {
+    text-align: center;
+    margin-bottom: 3rem;
+    width: 100%;
+}
+
+.tasks-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(to right, #fff, var(--main-orange));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.tasks-intro {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #ccc;
+    text-align: center;
+}
+
+.artists-grid {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.artist-card {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.artist-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.artist-image {
+    width: 200px;
+    flex-shrink: 0;
+}
+
+.artist-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.artist-info {
+    padding: 2rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.artist-info h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--main-orange);
+}
+
+.artist-info p {
+    color: #ccc;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.difficulty {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.difficulty-label {
+    color: #ccc;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+}
+
+.difficulty-level {
+    background-color: var(--main-orange);
+    color: white;
+    padding: 0.3rem 1rem;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.artist-button {
+    display: inline-block;
+    background-color: var(--main-orange);
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s;
+    margin-top: 1.5rem;
+    width: fit-content;
+    align-self: flex-start;
+    font-size: 1.1rem;
+}
+
+.artist-button:hover {
+    background-color: #ff6b33;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(224, 95, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .artist-card {
+        flex-direction: column;
+    }
+
+    .artist-image {
+        width: 100%;
+        height: 200px;
+    }
+
+    .artist-info {
+        padding: 1.5rem;
+    }
+
+    .tasks-hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    color: #ccc;
+    font-size: 1.5rem;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+.social-links i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.social-links a:hover {
+    color: white;
+    background: var(--main-orange);
+    transform: translateY(-2px);
+    text-decoration: none;
+    border: none;
+}
+
+.social-links a[title*="Twitter"]:hover {
+    background: #1DA1F2;
+}
+
+.social-links a[title*="Instagram"]:hover {
+    background: #E4405F;
+}
+
+.social-links a[title*="Facebook"]:hover {
+    background: #1877F2;
+}
+
+.social-links a[title*="YouTube"]:hover {
+    background: #FF0000;
+}
+
+.social-links a[title*="TikTok"]:hover {
+    background: #000000;
+}
+
+.social-links a[title*="SoundCloud"]:hover {
+    background: #FF3300;
+}
+
+.social-links a[title*="Spotify"]:hover {
+    background: #1DB954;
+}
+
+.social-links a[title*="Apple"]:hover {
+    background: #FB233B;
+}
+
+.social-links a[title*="X (Twitter)"]:hover {
+    background: #000000;
+} 
