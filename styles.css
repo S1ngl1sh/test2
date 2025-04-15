@@ -257,6 +257,10 @@ p {
         font-size: 1.2rem;
     }
 
+    .nav-links a.active::after {
+        display: none;
+    }
+
     .search-container {
         display: none;
     }
